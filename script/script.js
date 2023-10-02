@@ -13,10 +13,11 @@ function showSlide(index) {
 
 function nextSlide() {
     currentSlide++;
-    if (currentSlide >= slides.length) {
+    if (currentSlide >= slides.length) 
+    {
         currentSlide = 0;
     }
     showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 5000); // Ändra bild var 5 sekunder (5000 ms)
+setInterval(nextSlide, 8000); // Ändra bild varaktighet

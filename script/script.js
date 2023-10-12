@@ -49,3 +49,25 @@ window.addEventListener("scroll", function()
         element.classList.add("hide-btn")
     }
 })
+
+//Open & close "Offert"
+const menu = document.getElementById("sideMenu")
+const overlay = document.getElementById("overlay")
+
+function showHideMenu()
+{
+    if (menu.classList.contains("hide-btn"))
+    {
+        menu.classList.remove("hide-btn")
+        overlay.classList.remove("hide-btn")
+
+    }
+}
+
+function hideMenu()
+{
+    overlay.classList.add("hide-btn")
+    menu.classList.add("hide-btn")
+}
+
+

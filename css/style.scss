@@ -7,6 +7,23 @@ body
     position: relative;
 }
 
+#overlay
+{
+    opacity: 0.6;
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
+.hide-btn
+{
+    opacity: 0 !important;
+    z-index: -1 !important;
+    right: -100% !important;
+}
+
 a
 {
     font-family: 'Montserrat', sans-serif;
@@ -139,6 +156,7 @@ i
     padding-inline: 2.5rem;
     padding-block: 0rem;
     margin: 0;
+    position: relative;
 
     #logotype
     {
@@ -170,6 +188,14 @@ i
         display: flex;
     }
 
+    #offert-btn
+    { 
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
     .offert
     {
         display: flex;
@@ -181,6 +207,19 @@ i
         }
     }
     
+    .sideMenu
+    {
+        width: 25vw;
+        height: 100%;
+        background-color: #002330f2;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 1;
+        transition: opacity ease-in-out 120ms, right 300ms;
+    }
+
     #btn-top
     {
         background-color: #00B798;
@@ -208,11 +247,6 @@ i
             margin-bottom: 0.2rem;
            }
         }
-    }
-
-    .hide-btn
-    {
-        opacity: 0 !important;
     }
 }
 
